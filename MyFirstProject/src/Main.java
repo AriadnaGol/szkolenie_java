@@ -15,6 +15,11 @@ public class Main {
         System.out.println("b - a = " + c);
         System.out.println("a * b = " + multiply(a,b));
         System.out.println("a / b = " + divide(a,b));
+        System.out.println("b / a = " + divide(b,a));
+        double d = 9.13;
+        double e = 15.98;
+        System.out.println("d / e = " + divide(d,e));
+        System.out.println("e / 0 = " + divide(e,0));
     }
 
     private static int multiply(int a, int b){
@@ -23,5 +28,9 @@ public class Main {
 
     private static double divide(int a, int b){
         return (double)a / (double)b;
+    }
+
+    private static double divide(double a, double b){
+        return a / b;
     }
 }
