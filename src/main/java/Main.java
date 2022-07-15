@@ -1,3 +1,4 @@
+import cyber.trainees.collections.CollectionsService;
 import cyber.trainees.homework.homework01.Homework01Service;
 import cyber.trainees.homework.homework02.*;
 import cyber.trainees.inheritance.Color;
@@ -26,7 +27,10 @@ public class Main {
 
         modelVehicle.setBrand("Lexus");
         modelVehicle.setName("RX 540");
-        System.out.println(modelVehicle);
+       // System.out.println(modelVehicle);
+
+        CollectionsService service = new CollectionsService();
+        service.printCollections();
     }
 }
 
