@@ -24,7 +24,9 @@ public class Main {
                 2000.0,
                 Color.WHITE);
 
-        System.out.println(modelVehicle.toString());
+        modelVehicle.setBrand("Lexus");
+        modelVehicle.setName("RX 540");
+        System.out.println(modelVehicle);
     }
 }
 
