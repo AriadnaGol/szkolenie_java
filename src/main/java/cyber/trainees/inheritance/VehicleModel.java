@@ -1,10 +1,10 @@
 package cyber.trainees.inheritance;
 
 public class VehicleModel extends Vehicle {
-    private final String name;
-    private final int mileage;
-    private final double engineCapacity;
-    private final Color color;
+    private String name;
+    private int mileage;
+    private double engineCapacity;
+    private Color color;
 
     public VehicleModel(String brand, String productionYear, String carDrive, String name, int mileage, double engineCapacity, Color color) {
         super(brand, productionYear, carDrive);
@@ -28,6 +28,22 @@ public class VehicleModel extends Vehicle {
 
     public Color getColor() {
         return color;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
+    }
+
+    public void setEngineCapacity(double engineCapacity) {
+        this.engineCapacity = engineCapacity;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     @Override
