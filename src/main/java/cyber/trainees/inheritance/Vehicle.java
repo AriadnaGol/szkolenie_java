@@ -1,9 +1,17 @@
 package cyber.trainees.inheritance;
 
 public class Vehicle {
-    private final String brand;
-    private final String productionYear;
-    private final String carDrive;
+    public void setProductionYear(String productionYear) {
+        this.productionYear = productionYear;
+    }
+
+    public void setCarDrive(String carDrive) {
+        this.carDrive = carDrive;
+    }
+
+    private String brand;
+    private String productionYear;
+    private String carDrive;
 
     public Vehicle(String brand, String productionYear, String carDrive) {
         this.brand = brand;
@@ -18,6 +26,11 @@ public class Vehicle {
     public String getBrand() {
         return brand;
     }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
 
     public String getProductionYear() {
         return productionYear;
