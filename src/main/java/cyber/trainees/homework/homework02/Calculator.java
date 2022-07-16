@@ -1,5 +1,7 @@
 package cyber.trainees.homework.homework02;
 
+import java.util.List;
+
 public class Calculator {
     private final Addition addition;
     private final Subtraction subtraction;
@@ -25,5 +27,12 @@ public class Calculator {
 
         double divisionResult = division.divide(10, 2);
         System.out.println("10 / 2 = " + divisionResult);
+    }
+    public void printDoubleResult(List<Double> doubleList) {
+        Double result = 0.0;
+        for (Double number : doubleList) {
+            result = addition.add(number, result);
+        }
+        System.out.println(result);
     }
 }

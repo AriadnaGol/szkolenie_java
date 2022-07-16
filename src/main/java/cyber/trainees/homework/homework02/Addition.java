@@ -11,7 +11,7 @@ public class Addition {
         return number1 + number2;
     }
 
-    public double add(double number1, double number2) {
+    public Double add(Double number1, Double number2) {
         return number1 + number2;
     }
 

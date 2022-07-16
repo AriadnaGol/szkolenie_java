@@ -6,6 +6,9 @@ import cyber.trainees.inheritance.Vehicle;
 import cyber.trainees.inheritance.VehicleModel;
 import cyber.trainees.spotkania.Loops;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         //Homework01Service homework01Service = new Homework01Service();
@@ -35,7 +38,16 @@ public class Main {
         Loops loops = new Loops();
         //loops.printNumbers();
 
-        loops.printLetters();
+       // loops.printLetters();
+
+        Calculator calculator = new Calculator(new Addition(), new Subtraction(), new Multiplication(), new Division());
+        List<Double> numbers = new ArrayList<>();
+        numbers.add(1.1);
+        numbers.add(1.2);
+        numbers.add(1.3);
+        numbers.add(1.4);
+        numbers.add(2.4);
+        calculator.printDoubleResult(numbers);
     }
 }
 
