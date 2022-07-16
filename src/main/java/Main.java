@@ -33,7 +33,9 @@ public class Main {
         // CollectionsService service = new CollectionsService();
         // service.printCollections();
         Loops loops = new Loops();
-        loops.printNumbers();
+        //loops.printNumbers();
+
+        loops.printLetters();
     }
 }
 
