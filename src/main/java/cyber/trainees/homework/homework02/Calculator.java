@@ -1,5 +1,6 @@
 package cyber.trainees.homework.homework02;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -49,5 +50,7 @@ public class Calculator {
         for (int number : numbersSet) {
             System.out.print(number + ", ");
         }
+
+
     }
 }
