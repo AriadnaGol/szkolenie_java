@@ -7,6 +7,7 @@ import cyber.trainees.inheritance.VehicleModel;
 import cyber.trainees.spotkania.Loops;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -48,6 +49,12 @@ public class Main {
         numbers.add(1.4);
         numbers.add(2.4);
         calculator.printDoubleResult(numbers);
+
+        List<Integer> numbers2 = new ArrayList<>(Arrays.asList(
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+        ));
+
+        calculator.printIntsResult(numbers2);
     }
 }
 

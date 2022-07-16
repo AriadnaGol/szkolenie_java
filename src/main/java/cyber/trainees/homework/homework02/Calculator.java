@@ -35,4 +35,12 @@ public class Calculator {
         }
         System.out.println(result);
     }
+
+    public void printIntsResult(List<Integer> integerList) {
+        int multiplyResult = 1;
+        for (int number : integerList) {
+            multiplyResult = multiplication.multiply(number,multiplyResult);
+        }
+        System.out.println(multiplyResult);
+    }
 }
