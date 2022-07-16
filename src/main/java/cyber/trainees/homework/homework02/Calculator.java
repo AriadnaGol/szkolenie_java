@@ -1,6 +1,7 @@
 package cyber.trainees.homework.homework02;
 
 import java.util.List;
+import java.util.Set;
 
 public class Calculator {
     private final Addition addition;
@@ -42,5 +43,11 @@ public class Calculator {
             multiplyResult = multiplication.multiply(number,multiplyResult);
         }
         System.out.println(multiplyResult);
+    }
+    public void printISet(Set<Integer> numbersSet) {
+
+        for (int number : numbersSet) {
+            System.out.print(number + ", ");
+        }
     }
 }

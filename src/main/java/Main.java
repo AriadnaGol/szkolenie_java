@@ -6,9 +6,7 @@ import cyber.trainees.inheritance.Vehicle;
 import cyber.trainees.inheritance.VehicleModel;
 import cyber.trainees.spotkania.Loops;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -55,6 +53,9 @@ public class Main {
         ));
 
         calculator.printIntsResult(numbers2);
+
+        Set<Integer> number3 = new HashSet<>(Set.of(1,2,3,18));
+        calculator.printISet(number3);
     }
 }
 
