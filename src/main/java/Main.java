@@ -4,6 +4,7 @@ import cyber.trainees.homework.homework02.*;
 import cyber.trainees.inheritance.Color;
 import cyber.trainees.inheritance.Vehicle;
 import cyber.trainees.inheritance.VehicleModel;
+import cyber.trainees.spotkania.Loops;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,8 +30,10 @@ public class Main {
         modelVehicle.setName("RX 540");
        // System.out.println(modelVehicle);
 
-        CollectionsService service = new CollectionsService();
-        service.printCollections();
+        // CollectionsService service = new CollectionsService();
+        // service.printCollections();
+        Loops loops = new Loops();
+        loops.printNumbers();
     }
 }
 
