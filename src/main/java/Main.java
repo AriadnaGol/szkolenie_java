@@ -7,6 +7,8 @@ import cyber.trainees.inheritance.VehicleModel;
 import cyber.trainees.service.ReadData;
 import cyber.trainees.spotkania.Loops;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Main {
@@ -58,10 +60,20 @@ public class Main {
         Set<Integer> number3 = new HashSet<>(Set.of(1,2,3,18));
         //calculator.printISet(number3);
 
-        System.out.println("Jak masz na imie?");
+        //System.out.println("Jak masz na imie?");
+        //ReadData readData = new ReadData();
+        //String firstName = readData.getDataReadFromKeyboard();
+        //System.out.println("Witaj " + firstName);
+
         ReadData readData = new ReadData();
-        String firstName = readData.getDataReadFromKeyboard();
-        System.out.println("Witaj " + firstName);
+        VehicleModel vehicleModelFromFile;
+        try {
+            vehicleModelFromFile = readData.getVehicleModel(new File("src/main/resources/vehicleModel.txt"));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println(vehicleModelFromFile);
     }
 }
 

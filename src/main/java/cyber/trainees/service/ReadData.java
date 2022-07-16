@@ -22,7 +22,7 @@ public class ReadData {
         Scanner scanner = new Scanner(externalFile);
         String line = scanner.nextLine();
 
-        String[] fields = line.split(",");
+        String[] fields = line.split(", ");
 
         VehicleModel vehicleModel = new VehicleModel(
                 fields[0],
