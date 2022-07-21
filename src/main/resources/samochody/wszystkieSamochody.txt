@@ -1,0 +1,3 @@
+Volvo, 2022, all wheels drive, XC60, 1000, 2000.0, WHITE
+Mercedes, 2023, all wheels drive, GLE, 3350, 4500.0, RED
+Lexus, 2021, all wheels drive, RX 450N, 10350, 3500.0, BLACK

@@ -78,8 +78,14 @@ public class Main {
 
        ReadService readService = new ReadService(new Scanner(System.in));
        //readService.getInputsFromUser();
+        //try {
+        //    readService.getCarsFromFiles();
+        //} catch (FileNotFoundException e) {
+        //    throw new RuntimeException(e);
+        //}
+
         try {
-            readService.getCarsFromFiles();
+            readService.getCarsFromSingleFile();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

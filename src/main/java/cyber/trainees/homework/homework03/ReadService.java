@@ -15,6 +15,27 @@ public class ReadService {
         this.systemScanner = scanner;
     }
 
+    //ZADANIE 3
+    public void getCarsFromSingleFile() throws FileNotFoundException {
+        Scanner fileScanner = new Scanner (new File("src/main/resources/samochody/wszystkieSamochody.txt"));
+        for (int i = 1; i <= 3; i ++) {
+            String fileContent = fileScanner.nextLine();
+            String[] carFields = fileContent.split(", ");
+
+            VehicleModel car = new VehicleModel(
+                    carFields[0],
+                    carFields[1],
+                    carFields[2],
+                    carFields[3],
+                    Integer.valueOf(carFields[4]),
+                    Double.valueOf(carFields[5]),
+                    Color.valueOf(carFields[6])
+            );
+
+            System.out.println("Pojazd nr " + i + ": "  + car);
+        }
+    }
+
     //ZADANIE 2
     public void getCarsFromFiles() throws FileNotFoundException {
         int totalMileage = 0;
