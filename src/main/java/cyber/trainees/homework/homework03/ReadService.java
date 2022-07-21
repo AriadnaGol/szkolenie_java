@@ -1,13 +1,52 @@
 package cyber.trainees.homework.homework03;
 
+import cyber.trainees.inheritance.Color;
+import cyber.trainees.inheritance.VehicleModel;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class ReadService {
-    private Scanner scanner;
+    private Scanner systemScanner;
 
     public ReadService(Scanner scanner) {
-        this.scanner = scanner;
+        this.systemScanner = scanner;
+    }
+
+    //ZADANIE 2
+    public void getCarsFromFiles() throws FileNotFoundException {
+        int totalMileage = 0;
+        double[] availableEngineCapacities = new double[3];
+        for (int i = 1; i <= 3; i ++) {
+            Scanner fileScanner = new Scanner (new File("src/main/resources/samochody/samochod" + i + ".txt"));
+            String fileContent = fileScanner.nextLine();
+
+            String[] carFields = fileContent.split(", ");
+
+            VehicleModel car = new VehicleModel(
+                    carFields[0],
+                    carFields[1],
+                    carFields[2],
+                    carFields[3],
+                    Integer.valueOf(carFields[4]),
+                    Double.valueOf(carFields[5]),
+                    Color.valueOf(carFields[6])
+            );
+
+            totalMileage = totalMileage + car.getMileage();
+            availableEngineCapacities[i-1] = car.getEngineCapacity();
+
+            System.out.println("Pojazd nr " + i + ": "  + car);
+        }
+
+        System.out.println("Laczna ilosc przejechanych kilometrow przez samochody: " + totalMileage);
+        System.out.println("Dostepne pojemosci silnikow samochodow: " +
+                availableEngineCapacities[0] + ", " +
+                availableEngineCapacities[1] + ", " +
+                availableEngineCapacities[2]
+        );
     }
 
     //ZADANIE 1
@@ -23,7 +62,7 @@ public class ReadService {
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Write number:");
-            intNumbers[i] = scanner.nextInt();
+            intNumbers[i] = systemScanner.nextInt();
             resultOfAddition = resultOfAddition + intNumbers[i];
             multiplicationResult = multiplicationResult * intNumbers[i];
         }
@@ -58,7 +97,7 @@ public class ReadService {
 
         for (int i = 0; i < 5; i++) {
             System.out.println("Write number:");
-            bigDecimalNumbers[i] = scanner.nextBigDecimal();
+            bigDecimalNumbers[i] = systemScanner.nextBigDecimal();
             resultOfAddition = resultOfAddition.add(bigDecimalNumbers[i]);
             multiplicationResult = multiplicationResult.multiply(bigDecimalNumbers[i]);
         }

@@ -77,7 +77,12 @@ public class Main {
         //System.out.println(vehicleModelFromFile);
 
        ReadService readService = new ReadService(new Scanner(System.in));
-       readService.getInputsFromUser();
+       //readService.getInputsFromUser();
+        try {
+            readService.getCarsFromFiles();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 
