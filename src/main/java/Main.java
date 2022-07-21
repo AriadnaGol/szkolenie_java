@@ -1,6 +1,7 @@
 import cyber.trainees.collections.CollectionsService;
 import cyber.trainees.homework.homework01.Homework01Service;
 import cyber.trainees.homework.homework02.*;
+import cyber.trainees.homework.homework03.ReadService;
 import cyber.trainees.inheritance.Color;
 import cyber.trainees.inheritance.Vehicle;
 import cyber.trainees.inheritance.VehicleModel;
@@ -67,13 +68,40 @@ public class Main {
 
         ReadData readData = new ReadData();
         VehicleModel vehicleModelFromFile;
-        try {
-            vehicleModelFromFile = readData.getVehicleModel(new File("src/main/resources/vehicleModel.txt"));
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+       try {
+          vehicleModelFromFile = readData.getVehicleModel(new File("src/main/resources/vehicleModel.txt"));
+       } catch (FileNotFoundException e) {
+           throw new RuntimeException(e);
+       }
+//
+        //System.out.println(vehicleModelFromFile);
 
-        System.out.println(vehicleModelFromFile);
+       ReadService readService = new ReadService(new Scanner(System.in));
+       readService.getInputsFromUser();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
