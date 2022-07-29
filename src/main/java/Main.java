@@ -3,21 +3,6 @@ import cyber.trainees.wyjasnienia.Basics;
 import cyber.trainees.wyjasnienia.BasicsInteger;
 
 public class Main {
-    public static String SEPARATOR_SPACJA = "";
-
-    public String nazwaMetody() {
-        return "";
-    }
-
-    public Integer kolejnaMetoda() {
-        return 0;
-    }
-
-    public void wyswietlTekst(String tekst) {
-        System.out.println(tekst);
-    }
-
-
     public static void main(String[] args) {
         Homework03 homework03 = new Homework03();
 
