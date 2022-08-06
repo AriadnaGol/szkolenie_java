@@ -67,7 +67,7 @@ public class Wyjatki {
         Integer c = scanner.nextInt();
         Double wynik = Math.sqrt(c);
 
-        System.out.println("pierwiastek z liczby: " + Math.sqrt(wynik));
+        System.out.println("pierwiastek z liczby: " + wynik);
 
         //try {
         //} catch ( )
