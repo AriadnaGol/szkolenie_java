@@ -40,8 +40,8 @@ public class Main {
         //wyjatki.obliczPierwiastek();
 
         Obiekty obiekty = new Obiekty();
-        obiekty.uruchom();
-
+        //obiekty.uruchom();
+        obiekty.zadanie4();
 
     }
 }

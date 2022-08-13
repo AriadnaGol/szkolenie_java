@@ -16,6 +16,15 @@ public class Pies extends Zwierze {
         this.imieOpiekuna = imieOpiekuna;
     }
 
+    public String przedstawSie() {
+        return "jestem psem. Moje imie: " + this.imie
+                + " Moja waga: " + this.waga
+                + " Moja data urodzenia: " + this.dataUrodzenia
+                + " Moj opiekun to: " + this.imieOpiekuna
+                + " moj wzrost: " + getWzrost()
+                + " czy mam siersc? " + getCzyMaSiersc();
+    }
+
     @Override
     public void dajGlos() {
         System.out.println("Hau hau!!");

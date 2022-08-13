@@ -1,6 +1,7 @@
 package cyber.trainees.wyjasnienia;
 
 import cyber.trainees.wyjasnienia.Zwierzeta.Kot;
+import cyber.trainees.wyjasnienia.Zwierzeta.Pies;
 import cyber.trainees.wyjasnienia.Zwierzeta.Zwierze;
 
 import java.time.LocalDate;
@@ -31,10 +32,15 @@ public class Obiekty {
         zwierzaki.add(new Kot("Kiara ", LocalDate.of(2022,4,18),1.9, "Wiki"));
         zwierzaki.add(new Kot("Kalhula ", LocalDate.of(2021,4,30),3.9, "Wiki"));
         zwierzaki.add(new Kot("Kociuna ", LocalDate.of(2022,4,18),1.9, "Wiki", 40.0, true));
+        zwierzaki.add(new Pies("Azor ", LocalDate.of(2022,4,18),1.9, "Wiki", 40.0, true));
 
         for (Zwierze zwierze: zwierzaki) {
             if (zwierze instanceof Kot) {
                 System.out.println(((Kot) zwierze).przedstawSie());
+                zwierze.dajGlos();
+            } else if (zwierze instanceof Pies) {
+                System.out.println(((Pies) zwierze).przedstawSie());
+                zwierze.dajGlos();
             }
         }
     }
