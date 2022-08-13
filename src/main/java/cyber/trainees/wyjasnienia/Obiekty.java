@@ -14,19 +14,14 @@ public class Obiekty {
         Kot kot1 = new Kot("Kiara ", LocalDate.of(2022,4,18),1.9, "Wiki");
         koty.add(kot1);
 
-        Kot kot2 = new Kot("Kalhula ", LocalDate.of(2021,4,98),3.9, "Wiki");
+        Kot kot2 = new Kot("Kalhula ", LocalDate.of(2021,4,30),3.9, "Wiki");
         koty.add(kot2);
 
-        Kot kot3 = new Kot("Kociuna ", LocalDate.of(2022,4,18),1.9, "Wiki");
+        Kot kot3 = new Kot("Kociuna ", LocalDate.of(2022,4,18),1.9, "Wiki", 40.0, true);
         koty.add(kot3);
 
-
         for (Kot kot: koty) {
-            System.out.println(kot);
+            System.out.println(kot.przedstawSie());
         }
-
     }
-
-
-
 }
