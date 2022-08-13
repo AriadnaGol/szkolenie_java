@@ -1,0 +1,4 @@
+PIES, Azorek, 2020/04/18, 14, Ari, 50, true
+KOT, Kiara, 2022/04/18, 2, Ari, 20, true
+KOT, Kahlua, 2021/04/15, 4, Ari, 20, true
+KOT, KOciuna, 2019/04/17, 5, Ari, 20, true

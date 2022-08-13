@@ -8,13 +8,14 @@ import cyber.trainees.wyjasnienia.Zwierzeta.Kot;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException, IllegalAccessException {
+    public static void main(String[] args) throws IOException, IllegalAccessException, ParseException {
         //Petle petle = new Petle();
 //
         //var numbers = new ArrayList<BigDecimal>();
@@ -40,9 +41,10 @@ public class Main {
         //wyjatki.obliczPierwiastek();
 
         Obiekty obiekty = new Obiekty();
+        //obiekty.zadanie3();
+        //obiekty.zadanie4();
         //obiekty.uruchom();
-        obiekty.zadanie4();
-
+        obiekty.zadanie5();
     }
 }
 
