@@ -3,13 +3,12 @@ import cyber.trainees.homework.homework02.*;
 import cyber.trainees.inheritance.Color;
 import cyber.trainees.inheritance.Vehicle;
 import cyber.trainees.inheritance.VehicleModel;
-import cyber.trainees.wyjasnienia.Choinka;
-import cyber.trainees.wyjasnienia.InstrukcjeWarunkowe;
-import cyber.trainees.wyjasnienia.Petle;
-import cyber.trainees.wyjasnienia.Wyjatki;
+import cyber.trainees.wyjasnienia.*;
+import cyber.trainees.wyjasnienia.Zwierzeta.Kot;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -36,9 +35,12 @@ public class Main {
         //int wysokoscChoinki = scanner.nextInt();
         //choinka.narysujChoinke(wysokoscChoinki);
 
-        Wyjatki wyjatki = new Wyjatki();
-        wyjatki.uruchom();
+        //Wyjatki wyjatki = new Wyjatki();
+        //wyjatki.uruchom();
         //wyjatki.obliczPierwiastek();
+
+        Obiekty obiekty = new Obiekty();
+        obiekty.uruchom();
 
 
     }
