@@ -16,4 +16,8 @@ public class Zwierze {
     public Boolean getCzyMaSiersc() {
         return czyMaSiersc;
     }
+
+    public void dajGlos() {
+        System.out.println("wrrrr");
+    }
 }

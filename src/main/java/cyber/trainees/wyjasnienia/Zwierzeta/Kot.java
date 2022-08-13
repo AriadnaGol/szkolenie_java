@@ -31,5 +31,10 @@ public class Kot extends Zwierze {
                 + " moj wzrost: " + getWzrost()
                 + " czy mam siersc? " + getCzyMaSiersc();
     }
+
+    @Override
+    public void dajGlos() {
+        System.out.println("Miau miau!!");
+    }
 }
 
