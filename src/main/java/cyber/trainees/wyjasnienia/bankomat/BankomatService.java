@@ -32,7 +32,7 @@ public class BankomatService {
                 System.out.println("Bankomat posiada: " + bankomat.getSaldo());
                 break;
         }
-        return pozycja != 4;
+        return pozycja != 5;
         }
 
         private void sprawdzWprowadzoneKwoty(final Integer kwota) {
