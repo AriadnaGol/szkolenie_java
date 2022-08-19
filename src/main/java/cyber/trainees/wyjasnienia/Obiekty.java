@@ -1,6 +1,7 @@
 package cyber.trainees.wyjasnienia;
 
 import cyber.trainees.wyjasnienia.Zwierzeta.Kot;
+import cyber.trainees.wyjasnienia.Zwierzeta.Papuga;
 import cyber.trainees.wyjasnienia.Zwierzeta.Pies;
 import cyber.trainees.wyjasnienia.Zwierzeta.Zwierze;
 
@@ -76,16 +77,25 @@ public class Obiekty {
                         Double.parseDouble(zwierzeProperties[5]),
                         Boolean.parseBoolean(zwierzeProperties[6])
                 ));
+            } else if (zwierzeProperties[0].equals("PAPUGA")) {
+                zwierzeta.add(new Papuga(
+                        zwierzeProperties[1],
+                        dateConverter.parseStringToDate(zwierzeProperties[2]),
+                        Double.parseDouble(zwierzeProperties[3]),
+                        zwierzeProperties[4],
+                        Double.parseDouble(zwierzeProperties[5]),
+                        Boolean.parseBoolean(zwierzeProperties[6])
+                ));
             }
-        }
 
-        for (Zwierze zwierze : zwierzeta) {
-            if (zwierze instanceof Kot) {
-                System.out.println(((Kot) zwierze).przedstawSie());
-                zwierze.dajGlos();
-            } else if (zwierze instanceof Pies) {
-                System.out.println(((Pies) zwierze).przedstawSie());
-                zwierze.dajGlos();
+            for (Zwierze zwierze : zwierzeta) {
+                if (zwierze instanceof Kot) {
+                    System.out.println(((Kot) zwierze).przedstawSie());
+                    zwierze.dajGlos();
+                } else if (zwierze instanceof Pies) {
+                    System.out.println(((Pies) zwierze).przedstawSie());
+                    zwierze.dajGlos();
+                }
             }
         }
     }
