@@ -48,7 +48,8 @@ public class Main {
         //obiekty.zadanie5();
 
         BankomatService service = new BankomatService();
-        service.uruchom();
+        //service.uruchom();
+        service.uruchom2();
     }
 }
 
