@@ -5,6 +5,7 @@ import cyber.trainees.inheritance.Vehicle;
 import cyber.trainees.inheritance.VehicleModel;
 import cyber.trainees.wyjasnienia.*;
 import cyber.trainees.wyjasnienia.Zwierzeta.Kot;
+import cyber.trainees.wyjasnienia.bankomat.BankomatService;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -40,11 +41,14 @@ public class Main {
         //wyjatki.uruchom();
         //wyjatki.obliczPierwiastek();
 
-        Obiekty obiekty = new Obiekty();
+        //Obiekty obiekty = new Obiekty();
         //obiekty.zadanie3();
         //obiekty.zadanie4();
         //obiekty.uruchom();
-        obiekty.zadanie5();
+        //obiekty.zadanie5();
+
+        BankomatService service = new BankomatService();
+        service.uruchom();
     }
 }
 
